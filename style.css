@@ -43,6 +43,10 @@ header {
   margin-top: 30px;
 }
 
+#home-page {
+  display: block; /* default style */
+}
+
 .farm-list h2 {
   margin-top: 0;
   font-size: 1.2em;
@@ -100,7 +104,6 @@ main {
   z-index: 10;
   cursor: pointer;
 }
-
 
 
 .hidden-page {
