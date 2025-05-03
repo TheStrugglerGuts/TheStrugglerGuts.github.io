@@ -1,17 +1,95 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4fdf4;
+}
+
+header {
+  background-color: #2e7d32;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.site-title {
+  margin: 0;
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.farm-list {
+  position: absolute;
+  top: 150px;
+  right: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.farm-list h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.farm-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.farm-list ul li {
+  padding: 5px 0;
+}
+
+
+.farm-list a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.farm-list a:hover {
+  text-decoration: underline;
+}
+
+
+
+main {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  margin-top: 30px;
 }
 
 .map-container {
   position: relative;
-  max-width: 100%;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.map-wrapper {
+  position: relative;
+  width: 600px; /* Set this to your actual image width */
 }
+
+.map-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.map-outline {
+  position: absolute;
+  border: 2px dashed red;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+
+
