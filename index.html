@@ -1,54 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <title>Interactive Map with Visible Outlines</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
 
-
 <header>
-  <p class="site-title">Tadeco Farms</p>
+  <p class="site-title">Soil Moisture Monitoring</p>
 </header>
 
-<aside class="farm-list">
-  <h2>List of Farms</h2>
-  <ul>
-    <li>Farm 1</li>
-    <li>Farm 2</li>
-    <li>Farm 3</li>
-    <li><a href="https://example.com/farm4">Farm 4</a></li>
-    <li>Farm 5</li>
-    <li>Farm 6</li>
-    <li>Farm 7</li>
-    <li>Farm 8</li>
-    <li>Farm 9</li>
-    <li>Farm 10</li>
-    <li>Farm 11</li>
-    <li>Farm 12</li>
-    <li>Farm 13</li>
-    <li>Farm 14</li>
-    <li>Farm 15</li>
-    <li>Farm 16</li>
-  </ul>
-</aside>
-
 <main>
-  <div class="map-container">
-    <div class="map-wrapper">
-      <img src="your-map.jpg" usemap="#map" alt="Map" id="map-image">
 
-      <!-- Visible overlay box -->
-      <a href="https://example.com" class="map-outline" style="left:50px; top:50px; width:150px; height:150px;"></a>
+   <!-- Home layout (only shown on main page) -->
+   <div id="home-layout">
+    <div class="map-container" id="home-page">
+      <div class="map-wrapper">
+        <img src="your-map.jpg" usemap="#map" alt="Map" id="map-image">
+      </div>
     </div>
 
-    <map name="map">
-      <area shape="rect" coords="50,50,200,200" href="https://example.com" alt="Region 1">
-    </map>
+    <aside class="farm-list">
+      <h2>List of Farms</h2>
+      <ul>
+        <li>Farm 1</li>
+        <li>Farm 2</li>
+        <li>Farm 3</li>
+        <li><a href="#" onclick="loadPage('farm4')">Farm 4</a></li>
+        <li>Farm 5</li>
+        <li>Farm 6</li>
+        <li>Farm 7</li>
+        <li>Farm 8</li>
+        <li>Farm 9</li>
+        <li>Farm 10</li>
+        <li>Farm 11</li>
+        <li>Farm 12</li>
+        <li>Farm 13</li>
+        <li>Farm 14</li>
+        <li>Farm 15</li>
+        <li>Farm 16</li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Hidden Content for Farm 4 -->
+  <div class="hidden-page" id="farm4-page">
+    <h2>Farm 4 Details</h2>
+
+    <div class="map-wrapper">
+      <img src="Farm 4 map.jpeg" usemap="#map" alt="Map" id="map-image">
+    </div>
+
+    <p>Welcome to Farm 4! Here is some information about this farm.</p>
+    <button onclick="loadPage('home')">Back to Map</button>
+    
+    <aside class="farm-list">
+      <h2>Farm 4 Regions</h2>
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li><a href="#" onclick="loadPage('RegionC')">C</a></li>
+        <li>D</li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Hidden Content for Region C -->
+  <div class="hidden-page" id="RegionC-page">
+    <h2>Region C Details</h2>
+    <p>Welcome to Region C! Here is some information about this area.</p>
+    <button onclick="loadPage('farm4')">Back to Farm 4</button>
+    <aside class="farm-list">
+      <h2>Farm 4C Device Clusters</h2>
+      <ul>
+        <li><a href="#" onclick="loadPage('ClusterA')">A</a></li>
+        <li><a href="#" onclick="loadPage('ClusterB')">B</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Hidden Content for Cluster A -->
+  <div class="hidden-page" id="ClusterA-page">
+    <h2>Cluster A Details</h2>
+    <p>Welcome to Cluster A! Here is some information about this area.</p>
+    <button onclick="loadPage('RegionC')">Back to Region C</button>
+  </div>
+
+  <!-- Hidden Content for Cluster B -->
+  <div class="hidden-page" id="ClusterB-page">
+    <h2>Cluster B Details</h2>
+    <p>Welcome to Cluster B! Here is some information about this area.</p>
+    <button onclick="loadPage('RegionC')">Back to Region C</button>
   </div>
 </main>
 
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
+
+
 </body>
 </html>

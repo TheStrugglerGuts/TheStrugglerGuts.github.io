@@ -6,7 +6,8 @@ body {
 
 header {
   background-color: #2e7d32;
-  padding: 40px 0;
+  padding: 20px 0;
+  height: 50px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -21,16 +22,25 @@ header {
 
 .farm-list {
   position: absolute;
-  top: 150px;
-  right: 40px;
+  top: 20%;
+  right: 5%;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 13px;
   border: 1px solid #ccc;
   max-width: 200px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   color: #4CAF50;
   text-decoration: none;
   font-weight: bold;
+}
+
+
+#home-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 30px;
 }
 
 .farm-list h2 {
@@ -71,6 +81,7 @@ main {
 
 .map-container {
   position: relative;
+  text-align: center;
 }
 
 .map-wrapper {
@@ -92,4 +103,7 @@ main {
 
 
 
+.hidden-page {
+  display: none;
+}
 
