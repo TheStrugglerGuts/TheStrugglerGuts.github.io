@@ -2,27 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For My Valentine ❤️</title>
+  <title>Interactive Map</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Happy Valentine's Day, My Love! 💖</h1>
-    <div class="circle-collage">
-      <img src="image1.jpg" alt="Our Memory 1" class="collage-img img1">
-      <img src="image2.jpg" alt="Our Memory 2" class="collage-img img2">
-      <img src="image3.jpg" alt="Our Memory 3" class="collage-img img3">
-      <img src="image4.jpg" alt="Our Memory 4" class="collage-img img4">
-      <img src="image5.jpg" alt="Our Memory 5" class="collage-img img5">
-    </div>
-    <div class="message-box">
-      <p>You mean the world to me. Every moment with you is special, and I’m so grateful to have you in my life.</p>
-      <p>Will you be my Valentine forever and always?</p>
-      <button id="surpriseBtn">Click for a Surprise! 🎁</button>
-      <p id="surpriseMessage" class="hidden">I LOVE YOU TO THE MOON AND BACK! 🌙❤️</p>
-    </div>
+
+  <div class="map-container">
+    <img src="your-map.jpg" usemap="#map" alt="Custom Map" id="map-image">
+
+    <map name="map">
+      <area shape="rect" coords="50,50,200,200" href="https://example.com" alt="Region 1">
+      <area shape="circle" coords="300,300,50" href="https://another-site.com" alt="Region 2">
+      <area shape="poly" coords="400,400,500,450,450,500" href="https://thirdsite.com" alt="Region 3">
+    </map>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
