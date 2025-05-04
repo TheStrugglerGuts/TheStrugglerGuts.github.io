@@ -24,7 +24,7 @@
     </div>
 
     <aside class="farm-list">
-      <h2>List of Farms</h2>
+      <h2 class="section-title">List of Farms</h2>
       <ul>
         <li>Farm 1</li>
         <li>Farm 2</li>
@@ -48,14 +48,14 @@
 
   <!-- Hidden Content for Farm 4 -->
   <div class="hidden-page" id="farm4-page">
-    <h2>Farm 4 Details</h2>
+    <h2 class="section-title">Farm 4</h2>
 
     <div class="map-wrapper">
       <img src="Farm 4 map.jpeg" usemap="#map" alt="Map" id="map-image">
     </div>
 
     <p>Welcome to Farm 4! Here is some information about this farm.</p>
-    <button onclick="loadPage('home')">Back to Map</button>
+    <button class="theme-button" onclick="loadPage('home')">Back to Map</button>
     
     <aside class="farm-list">
       <h2>Farm 4 Regions</h2>
@@ -70,15 +70,16 @@
 
   <!-- Hidden Content for Region C -->
   <div class="hidden-page" id="RegionC-page">
+    
+    <h2 class="section-title">Region C Details</h2>
+    <p>Welcome to Region C! Here is some information about this area.</p>
+    <button class="theme-button"  onclick="loadPage('farm4')">Back to Farm 4</button>
 
     <div class="map-wrapper">
       <img src="Region C.jpeg" usemap="#map" alt="Map" width= 600px id="map-image">
     </div>
 
 
-    <h2>Region C Details</h2>
-    <p>Welcome to Region C! Here is some information about this area.</p>
-    <button onclick="loadPage('farm4')">Back to Farm 4</button>
     <aside class="farm-list">
       <h2>Farm 4C Device Clusters</h2>
       <ul>
@@ -92,14 +93,13 @@
 
 
   <div class="hidden-page" id="ClusterA-page">
-    <h2>Cluster A Details</h2>
-    <p>Welcome to Cluster A!</p>
+    <h2 class="section-title">Cluster A</h2>
     <p>Press Video to see the compilation of all data</p>
     <p>Press Images to scroll through each reading</p>
     <!-- Toggle Buttons -->
     <div class="toggle-buttons">
-      <button onclick="showClusterASection('video')">Video</button>
-      <button onclick="showClusterASection('gallery')">Images</button>
+      <button class="theme-button" onclick="showClusterASection('video')">Video</button>
+      <button class="theme-button" onclick="showClusterASection('gallery')">Images</button>
     </div>
   
     <!-- Video Section -->
@@ -122,31 +122,30 @@
       </div>
 
       <div class="slider-buttons">
-        <button onclick="prevClusterAImage()">Previous</button>
-        <button onclick="nextClusterAImage()">Next</button>
+        <button class="theme-button" onclick="prevClusterAImage()">Previous</button>
+        <button class="theme-button" onclick="nextClusterAImage()">Next</button>
       </div>
     </div>
   
-    <button onclick="loadPage('RegionC')">Back to Region C</button>
+    <button class="theme-button" onclick="loadPage('RegionC')">Back to Region C</button>
   </div>
 
   
 
 
-
-
   <!-- Hidden Content for Cluster B -->
   <div class="hidden-page" id="ClusterB-page">
 
-    <h2>Cluster B Details</h2>
-    <p>Welcome to Cluster B! Here is some information about this area.</p>
+    <h2 class="section-title">Cluster B</h2>
+    
+    
     <p>Press Video to see the compilation of all data</p>
     <p>Press Images to scroll through each reading</p>
 
     <!-- Toggle Buttons -->
     <div class="toggle-buttons">
-      <button onclick="showClusterBSection('video')">Video</button>
-      <button onclick="showClusterBSection('gallery')">Images</button>
+      <button class="theme-button" onclick="showClusterBSection('video')">Video</button>
+      <button class="theme-button" onclick="showClusterBSection('gallery')">Images</button>
     </div>
 
 
@@ -170,12 +169,12 @@
       </div>
 
       <div class="slider-buttons">
-        <button onclick="prevClusterBImage()">Previous</button>
-        <button onclick="nextClusterBImage()">Next</button>
+        <button class="theme-button" onclick="prevClusterBImage()">Previous</button>
+        <button class="theme-button" onclick="nextClusterBImage()">Next</button>
       </div>
     </div>
 
-    <button onclick="loadPage('RegionC')">Back to Region C</button>
+    <button class="theme-button" onclick="loadPage('RegionC')">Back to Region C</button>
     
   </div>
 
