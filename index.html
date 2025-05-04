@@ -72,7 +72,7 @@
   <div class="hidden-page" id="RegionC-page">
 
     <div class="map-wrapper">
-      <img src="Region C.jpeg" usemap="#map" alt="Map" id="map-image">
+      <img src="Region C.jpeg" usemap="#map" alt="Map" width= 600px id="map-image">
     </div>
 
 
@@ -89,35 +89,91 @@
 
   </div>
 
-  <!-- Hidden Content for Cluster A -->
+
+
   <div class="hidden-page" id="ClusterA-page">
-
     <h2>Cluster A Details</h2>
-    <p>Welcome to Cluster A! Here is some information about this area.</p>
-    
-    <video width="600" controls>
-      <source src="Cluster A compilation Vid.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <p>Welcome to Cluster A!</p>
+    <p>Press Video to see the compilation of all data</p>
+    <p>Press Images to scroll through each reading</p>
+    <!-- Toggle Buttons -->
+    <div class="toggle-buttons">
+      <button onclick="showClusterASection('video')">Video</button>
+      <button onclick="showClusterASection('gallery')">Images</button>
+    </div>
+  
+    <!-- Video Section -->
+    <div id="clusterA-video-section">
+      <video width="600" controls>
+        <source src="Cluster A compilation Vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Cluster A Compilation of all data gathered</p>
+    </div>
+  
+    <!-- Image Gallery Section (Initially hidden) -->
+    <!-- Image Gallery Section (Initially hidden) -->
+    <div id="clusterA-gallery-section" style="display: none;">
+      <p>Images from Cluster A:</p>
 
-    <p> Cluster B Compilation of all data gathered </p>
+      <div class="image-slider">
+        <img id="clusterA-image" src="HEAT MAPS TADECO\CLUSTER A/First.png" alt="Cluster A Image" width="400">
+        <p id="clusterA-label">Cluster A 05/04/25 4:12PM</p> <!-- Label here -->
+      </div>
 
+      <div class="slider-buttons">
+        <button onclick="prevClusterAImage()">Previous</button>
+        <button onclick="nextClusterAImage()">Next</button>
+      </div>
+    </div>
+  
     <button onclick="loadPage('RegionC')">Back to Region C</button>
-
   </div>
+
+  
+
+
+
 
   <!-- Hidden Content for Cluster B -->
   <div class="hidden-page" id="ClusterB-page">
 
     <h2>Cluster B Details</h2>
     <p>Welcome to Cluster B! Here is some information about this area.</p>
-    
-    <video width="600" controls>
-      <source src="Cluster B compilation Vid.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <p>Press Video to see the compilation of all data</p>
+    <p>Press Images to scroll through each reading</p>
 
-    <p> Cluster B Compilation of all data gathered </p>
+    <!-- Toggle Buttons -->
+    <div class="toggle-buttons">
+      <button onclick="showClusterBSection('video')">Video</button>
+      <button onclick="showClusterBSection('gallery')">Images</button>
+    </div>
+
+
+    <!-- Video Section -->
+    <div id="clusterB-video-section">
+      <video width="600" controls>
+        <source src="Cluster B compilation Vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Cluster B Compilation of all data gathered</p>
+    </div>
+  
+    <!-- Image Gallery Section (Initially hidden) -->
+    <!-- Image Gallery Section (Initially hidden) -->
+    <div id="clusterB-gallery-section" style="display: none;">
+      <p>Images from Cluster B:</p>
+
+      <div class="image-slider">
+        <img id="clusterB-image" src="HEAT MAPS TADECO\CLUSTER B/First.png" alt="Cluster B Image" width="400">
+        <p id="clusterB-label">Cluster B 05/04/25 4:12PM</p> <!-- Label here -->
+      </div>
+
+      <div class="slider-buttons">
+        <button onclick="prevClusterBImage()">Previous</button>
+        <button onclick="nextClusterBImage()">Next</button>
+      </div>
+    </div>
 
     <button onclick="loadPage('RegionC')">Back to Region C</button>
     

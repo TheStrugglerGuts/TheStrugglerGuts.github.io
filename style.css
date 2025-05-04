@@ -110,3 +110,15 @@ main {
   display: none;
 }
 
+
+.image-slider {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
