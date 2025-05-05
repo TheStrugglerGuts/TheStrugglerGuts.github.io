@@ -129,7 +129,6 @@ const clusterBImages = [
   "CLuster b/Slide17.JPG",
   "CLuster b/Slide18.JPG",
   "CLuster b/Slide19.JPG"
-
 ];
 
 const clusterBLabels = [
