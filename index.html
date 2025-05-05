@@ -19,29 +19,33 @@
    <div id="home-layout">
     <div class="map-container" id="home-page">
       <div class="map-wrapper">
-        <img src="your-map.jpg" usemap="#map" alt="Map" id="map-image">
+
+        <h2 class="section-title">Map of all Tadeco Farms</h2>
+
+        <img src="your-map.jpg" usemap="#map" alt="Map" id="map-image">        
       </div>
     </div>
 
     <aside class="farm-list">
       <h2 class="section-title">List of Farms</h2>
       <ul>
-        <li>Farm 1</li>
-        <li>Farm 2</li>
-        <li>Farm 3</li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 1</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 2</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 3</a></li>
         <li><a href="#" onclick="loadPage('farm4')">Farm 4</a></li>
-        <li>Farm 5</li>
-        <li>Farm 6</li>
-        <li>Farm 7</li>
-        <li>Farm 8</li>
-        <li>Farm 9</li>
-        <li>Farm 10</li>
-        <li>Farm 11</li>
-        <li>Farm 12</li>
-        <li>Farm 13</li>
-        <li>Farm 14</li>
-        <li>Farm 15</li>
-        <li>Farm 16</li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 5</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 6</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 7</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 8</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 9</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 10</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 11</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 12</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 13</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 14</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 15</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">Farm 16</a></li>
+
       </ul>
     </aside>
   </div>
@@ -50,33 +54,45 @@
   <div class="hidden-page" id="farm4-page">
     <h2 class="section-title">Farm 4</h2>
 
+    <p>Welcome to Farm 4! Here is some information about this farm.</p>
     <div class="map-wrapper">
       <img src="Farm 4 map.jpeg" usemap="#map" alt="Map" id="map-image">
     </div>
 
-    <p>Welcome to Farm 4! Here is some information about this farm.</p>
     <button class="theme-button" onclick="loadPage('home')">Back to Map</button>
     
     <aside class="farm-list">
       <h2>Farm 4 Regions</h2>
       <ul>
-        <li>A</li>
-        <li>B</li>
+        <li><a href="#" onclick="loadPage('otherfarm')">A</a></li>
+        <li><a href="#" onclick="loadPage('otherfarm')">B</a></li>
         <li><a href="#" onclick="loadPage('RegionC')">C</a></li>
-        <li>D</li>
+        <li><a href="#" onclick="loadPage('otherfarm')">D</a></li>
       </ul>
     </aside>
   </div>
 
+<!-- Hidden Content for other farms -->
+<div class="hidden-page" id="otherfarm-page">
+  <h2 class="section-title">OOPS!</h2>
+  <p>Sorry there is no information on this farm currently</p>
+
+  <button class="theme-button" onclick="loadPage('home')">Back to Map</button>
+  
+  
+</div>
+
+
   <!-- Hidden Content for Region C -->
   <div class="hidden-page" id="RegionC-page">
-    
+
     <h2 class="section-title">Region C Details</h2>
     <p>Welcome to Region C! Here is some information about this area.</p>
     <button class="theme-button"  onclick="loadPage('farm4')">Back to Farm 4</button>
 
     <div class="map-wrapper">
-      <img src="Region C.jpeg" usemap="#map" alt="Map" width= 600px id="map-image">
+      <img src="LOTA.jpeg" usemap="#map" alt="Map" width= 600px id="map-image">
+      <img src="LOTB.jpeg" usemap="#map" alt="Map" width= 600px id="map-image">
     </div>
 
 
@@ -91,11 +107,13 @@
   </div>
 
 
-
+ <!-- Hidden CLuster A -->
+  
   <div class="hidden-page" id="ClusterA-page">
     <h2 class="section-title">Cluster A</h2>
-    <p>Press Video to see the compilation of all data</p>
-    <p>Press Images to scroll through each reading</p>
+
+    <p>Press Video to see the compilation of all data<br>Press Images to scroll through each reading</p>
+
     <!-- Toggle Buttons -->
     <div class="toggle-buttons">
       <button class="theme-button" onclick="showClusterASection('video')">Video</button>
@@ -113,14 +131,24 @@
   
     <!-- Image Gallery Section (Initially hidden) -->
     <!-- Image Gallery Section (Initially hidden) -->
+    
+
     <div id="clusterA-gallery-section" style="display: none;">
       <p>Images from Cluster A:</p>
-
-      <div class="image-slider">
-        <img id="clusterA-image" src="HEAT MAPS TADECO\CLUSTER A/First.png" alt="Cluster A Image" width="400">
-        <p id="clusterA-label">Cluster A 05/04/25 4:12PM</p> <!-- Label here -->
+  
+      <div class="image-slider-row">
+   
+        <img id="clusterA-image" src="HEAT MAPS TADECO/CLUSTER A/First.png" alt="Cluster A Image" width="600">
+        
+        <div class="static-image">
+          <img id="scale-image" src="scalecolor.png" alt="Cluster A Overview">
+          <p>Soil Moisture Percentage color scale</p>
+        </div>
+        
       </div>
-
+      <p id="clusterA-label">Cluster A 05/04/25 4:12PM</p>
+      
+    
       <div class="slider-buttons">
         <button class="theme-button" onclick="prevClusterAImage()">Previous</button>
         <button class="theme-button" onclick="nextClusterAImage()">Next</button>
@@ -139,8 +167,8 @@
     <h2 class="section-title">Cluster B</h2>
     
     
-    <p>Press Video to see the compilation of all data</p>
-    <p>Press Images to scroll through each reading</p>
+    <p>Press Video to see the compilation of all data<br>Press Images to scroll through each reading</p>
+    
 
     <!-- Toggle Buttons -->
     <div class="toggle-buttons">
@@ -160,19 +188,30 @@
   
     <!-- Image Gallery Section (Initially hidden) -->
     <!-- Image Gallery Section (Initially hidden) -->
+
     <div id="clusterB-gallery-section" style="display: none;">
       <p>Images from Cluster B:</p>
-
-      <div class="image-slider">
-        <img id="clusterB-image" src="HEAT MAPS TADECO\CLUSTER B/First.png" alt="Cluster B Image" width="400">
-        <p id="clusterB-label">Cluster B 05/04/25 4:12PM</p> <!-- Label here -->
+  
+      <div class="image-slider-row">
+   
+        <img id="clusterB-image" src="HEAT MAPS TADECO/CLUSTER B/First.png" alt="Cluster B Image" width="600">
+        
+        <div class="static-image">
+          <img id="scale-image" src="scalecolor.png" alt="Cluster B Overview">
+          <p>Soil Moisture Percentage color scale</p>
+        </div>
+        
       </div>
-
+      <p id="clusterB-label">Cluster B 05/04/25 4:12PM</p>
+      
+    
       <div class="slider-buttons">
         <button class="theme-button" onclick="prevClusterBImage()">Previous</button>
         <button class="theme-button" onclick="nextClusterBImage()">Next</button>
       </div>
     </div>
+    
+    
 
     <button class="theme-button" onclick="loadPage('RegionC')">Back to Region C</button>
     

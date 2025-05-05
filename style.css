@@ -80,7 +80,7 @@ header {
 main {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  
 }
 
 .map-container {
@@ -90,7 +90,7 @@ main {
 
 .map-wrapper {
   position: relative;
-  width: 600px; /* Set this to your actual image width */
+  width: 780px; /* Set this to your actual image width */
 }
 
 .map-wrapper img {
@@ -98,12 +98,6 @@ main {
   display: block;
 }
 
-.map-outline {
-  position: absolute;
-  border: 2px dashed red;
-  z-index: 10;
-  cursor: pointer;
-}
 
 
 .hidden-page {
@@ -112,8 +106,9 @@ main {
 
 
 .image-slider {
-  text-align: center;
-  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .slider-buttons {
@@ -121,6 +116,47 @@ main {
   justify-content: center;
   gap: 10px;
   margin-top: 10px;
+}
+
+.image-slider-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  justify-content: center;
+}
+
+#clusterB-image {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #4CAF50;
+}
+
+#clusterA-image {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #4CAF50;
+}
+
+.static-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.static-image img {
+  height: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.static-image p {
+  margin-top: 8px;
+  color: #2e7d32;
+  font-weight: bold;
 }
 
 

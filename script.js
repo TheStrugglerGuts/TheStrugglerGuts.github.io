@@ -27,29 +27,29 @@ function showClusterASection(section) {
   }
 }
 
+
 let currentClusterAImageIndex = 0;
 
 const clusterAImages = [
-  "HEAT MAPS TADECO/CLUSTER A/First.png",
-  "HEAT MAPS TADECO/CLUSTER A/Second.png",
-  "HEAT MAPS TADECO/CLUSTER A/Third.png",
-  "HEAT MAPS TADECO/CLUSTER A/Fourth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Fifth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Sixth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Seventh.png",
-  "HEAT MAPS TADECO/CLUSTER A/Eighth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Nineth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Tenth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Eleventh.png",
-  "HEAT MAPS TADECO/CLUSTER A/Twelveth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Thirteenth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Fourtheenth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Fiftheenth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Sixteenth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Seventeenth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Eightheenth.png",
-  "HEAT MAPS TADECO/CLUSTER A/Ninetheenth.png"
-
+  "CLuster A/Slide1.JPG",
+  "CLuster A/Slide2.JPG",
+  "CLuster A/Slide3.JPG",
+  "CLuster A/Slide4.JPG",
+  "CLuster A/Slide5.JPG",
+  "CLuster A/Slide6.JPG",
+  "CLuster A/Slide7.JPG",
+  "CLuster A/Slide8.JPG",
+  "CLuster A/Slide9.JPG",
+  "CLuster A/Slide10.JPG",
+  "CLuster A/Slide11.JPG",
+  "CLuster A/Slide12.JPG",
+  "CLuster A/Slide13.JPG",
+  "CLuster A/Slide14.JPG",
+  "CLuster A/Slide15.JPG",
+  "CLuster A/Slide16.JPG",
+  "CLuster A/Slide17.JPG",
+  "CLuster A/Slide18.JPG",
+  "CLuster A/Slide19.JPG"
 ];
 
 const clusterALabels = [
@@ -110,25 +110,25 @@ function prevClusterAImage() {
 let currentClusterBImageIndex = 0;
 
 const clusterBImages = [
-  "HEAT MAPS TADECO/CLUSTER B/First.png",
-  "HEAT MAPS TADECO/CLUSTER B/Second.png",
-  "HEAT MAPS TADECO/CLUSTER B/Third.png",
-  "HEAT MAPS TADECO/CLUSTER B/Fourth.png",
-  "HEAT MAPS TADECO/CLUSTER B/Fifth.png",
-  "HEAT MAPS TADECO/CLUSTER B/Sixth.png",
-  "HEAT MAPS TADECO/CLUSTER B/seventh.png",
-  "HEAT MAPS TADECO/CLUSTER B/Eighth.png",
-  "HEAT MAPS TADECO/CLUSTER B/Nineth.png",
-  "HEAT MAPS TADECO/CLUSTER B/Tenth.png",
-  "HEAT MAPS TADECO/CLUSTER B/eleventh.png",
-  "HEAT MAPS TADECO/CLUSTER B/Twelveth.png",
-  "HEAT MAPS TADECO/CLUSTER B/Thirteen.png",
-  "HEAT MAPS TADECO/CLUSTER B/Fourtheen.png",
-  "HEAT MAPS TADECO/CLUSTER B/Fiftheen.png",
-  "HEAT MAPS TADECO/CLUSTER B/Sixteenth.png",
-  "HEAT MAPS TADECO/CLUSTER B/Seventheen.png",
-  "HEAT MAPS TADECO/CLUSTER B/eighteenth.png",
-  "HEAT MAPS TADECO/CLUSTER B/Ninetheen.png"
+  "Cluster b/Slide1.JPG",
+  "Cluster b/Slide2.JPG",
+  "Cluster b/Slide3.JPG",
+  "Cluster b/Slide4.JPG",
+  "Cluster b/Slide5.JPG",
+  "Cluster b/Slide6.JPG",
+  "Cluster b/Slide7.JPG",
+  "Cluster b/Slide8.JPG",
+  "Cluster b/Slide9.JPG",
+  "Cluster b/Slide10.JPG",
+  "Cluster b/Slide11.JPG",
+  "Cluster b/Slide12.JPG",
+  "Cluster b/Slide13.JPG",
+  "Cluster b/Slide14.JPG",
+  "Cluster b/Slide15.JPG",
+  "Cluster b/Slide16.JPG",
+  "Cluster b/Slide17.JPG",
+  "Cluster b/Slide18.JPG",
+  "Cluster b/Slide19.JPG"
 
 ];
 
