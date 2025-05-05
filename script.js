@@ -110,25 +110,25 @@ function prevClusterAImage() {
 let currentClusterBImageIndex = 0;
 
 const clusterBImages = [
-  "Cluster b/Slide1.JPG",
-  "Cluster b/Slide2.JPG",
-  "Cluster b/Slide3.JPG",
-  "Cluster b/Slide4.JPG",
-  "Cluster b/Slide5.JPG",
-  "Cluster b/Slide6.JPG",
-  "Cluster b/Slide7.JPG",
-  "Cluster b/Slide8.JPG",
-  "Cluster b/Slide9.JPG",
-  "Cluster b/Slide10.JPG",
-  "Cluster b/Slide11.JPG",
-  "Cluster b/Slide12.JPG",
-  "Cluster b/Slide13.JPG",
-  "Cluster b/Slide14.JPG",
-  "Cluster b/Slide15.JPG",
-  "Cluster b/Slide16.JPG",
-  "Cluster b/Slide17.JPG",
-  "Cluster b/Slide18.JPG",
-  "Cluster b/Slide19.JPG"
+  "CLuster b/Slide1.JPG",
+  "CLuster b/Slide2.JPG",
+  "CLuster b/Slide3.JPG",
+  "CLuster b/Slide4.JPG",
+  "CLuster b/Slide5.JPG",
+  "CLuster b/Slide6.JPG",
+  "CLuster b/Slide7.JPG",
+  "CLuster b/Slide8.JPG",
+  "CLuster b/Slide9.JPG",
+  "CLuster b/Slide10.JPG",
+  "CLuster b/Slide11.JPG",
+  "CLuster b/Slide12.JPG",
+  "CLuster b/Slide13.JPG",
+  "CLuster b/Slide14.JPG",
+  "CLuster b/Slide15.JPG",
+  "CLuster b/Slide16.JPG",
+  "CLuster b/Slide17.JPG",
+  "CLuster b/Slide18.JPG",
+  "CLuster b/Slide19.JPG"
 
 ];
 
