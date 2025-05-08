@@ -20,6 +20,54 @@ header {
   letter-spacing: 1px;
 }
 
+
+
+#home-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+#home-page {
+  display: block; /* default style */
+}
+
+.graph-list {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  background-color: #ffffff;
+  padding: 13px;
+  border: 1px solid #ccc;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+.graph-list h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.graph-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.graph-list ul li {
+  padding: 5px 0;
+}
+
+
 .farm-list {
   position: absolute;
   top: 20%;
@@ -34,18 +82,6 @@ header {
   font-weight: bold;
 }
 
-
-#home-layout {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  margin-top: 30px;
-}
-
-#home-page {
-  display: block; /* default style */
-}
 
 .farm-list h2 {
   margin-top: 0;
@@ -126,13 +162,26 @@ main {
 }
 
 #clusterB-image {
-  width: 600px;
+  width: 800px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #4CAF50;
+}
+#clusterB-graph {
+  width: 800px;
   height: auto;
   border-radius: 8px;
   border: 2px solid #4CAF50;
 }
 
 #clusterA-image {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #4CAF50;
+}
+
+#clusterA-graph {
   width: 600px;
   height: auto;
   border-radius: 8px;

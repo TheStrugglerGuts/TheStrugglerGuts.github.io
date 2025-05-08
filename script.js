@@ -77,14 +77,23 @@ const clusterALabels = [
 function showClusterASection(section) {
   const video = document.getElementById('clusterA-video-section');
   const gallery = document.getElementById('clusterA-gallery-section');
+  const graph =  document.getElementById('clusterA-graph-section');
 
   if (section === 'video') {
     video.style.display = 'block';
     gallery.style.display = 'none';
-  } else if (section === 'gallery') {
+    graph.style.display = 'none';
+  } 
+  else if (section === 'gallery') {
     video.style.display = 'none';
     gallery.style.display = 'block';
+    graph.style.display = 'none';
     updateClusterAImage(); // Ensure correct image shows when switching
+  }
+  else if( section == 'graph'){
+    video.style.display = 'none';
+    gallery.style.display = 'none';
+    graph.style.display = 'block';
   }
 }
 
@@ -156,15 +165,25 @@ const clusterBLabels = [
 function showClusterBSection(section) {
   const video = document.getElementById('clusterB-video-section');
   const gallery = document.getElementById('clusterB-gallery-section');
+  const graph =  document.getElementById('clusterB-graph-section');
 
   if (section === 'video') {
     video.style.display = 'block';
     gallery.style.display = 'none';
-  } else if (section === 'gallery') {
+    graph.style.display = 'none';
+  } 
+  else if (section === 'gallery') {
     video.style.display = 'none';
     gallery.style.display = 'block';
+    graph.style.display = 'none';
     updateClusterBImage(); // Ensure correct image shows when switching
   }
+  else if( section == 'graph'){
+    video.style.display = 'none';
+    gallery.style.display = 'none';
+    graph.style.display = 'block';
+  }
+
 }
 
 
